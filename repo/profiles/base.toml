@@ -1,0 +1,19 @@
+name = "ItolOS Base"
+package = "itolos-base"
+
+[system]
+domain = "itolos"
+architecture = "x86_64"
+
+[policy]
+protect_base = true
+allow_foreign_applications = true
+allow_foreign_system_packages = false
+allow_rebuild = true
+allow_capsules = true
+
+[solver]
+prefer_native = true
+prefer_compatible_binary = true
+rebuild_if_needed = true
+preserve_system_abi = true

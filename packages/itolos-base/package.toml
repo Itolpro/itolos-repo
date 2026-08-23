@@ -1,0 +1,50 @@
+name = "itolos-base"
+version = "0.1.4"
+architecture = "x86_64"
+type = "system-profile"
+
+essential = true
+protected = true
+system_domain = "itolos"
+
+depends = [
+    "itolos-release",
+    "itolos-filesystem",
+    "itolos-initramfs>=0.1.1",
+
+    "glibc",
+    "bash",
+    "coreutils",
+    "util-linux",
+
+    "systemd",
+    "systemd-sysvcompat",
+    "sudo",
+    "vim",
+    "nano",
+    "btop",
+    "dbus",
+    "shadow",
+    "pam",
+    "dialog",
+    "kbd",
+    "fontconfig",
+    "noto-fonts",
+
+    "iproute2",
+    "iputils",
+    "ca-certificates",
+
+    "linux",
+    "linux-firmware",
+
+    "slm"
+]
+
+requires_capabilities = [
+    "system:init",
+    "system:shell",
+    "system:network",
+    "system:kernel",
+    "system:slm"
+]

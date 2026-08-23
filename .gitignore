@@ -1,0 +1,8 @@
+*.tmp
+*.part
+.cache/
+build/
+repo-*/
+*.qcow2
+*.iso
+work/

@@ -1,0 +1,11 @@
+format = "slm-image-v1"
+kind = "installer"
+label = "ITOLOS_LIVE"
+
+[system]
+# A source repository, a manifest JSON, or a dumped system tree may be used.
+# Pass --sources with the trusted repository list for your build host.
+source = ".."
+profile = "itolos-base"
+locked = false
+packages = []

@@ -1,0 +1,43 @@
+{
+  "policy": {
+    "architecture": "amd64",
+    "allow_untrusted": false,
+    "require_package_checksums": true,
+    "strict_dependencies": true,
+    "protect_system_packages": true
+  },
+  "repos": [
+    {
+      "name": "itolos-local",
+      "type": "slm",
+      "url": "https://raw.githubusercontent.com/Itolpro/itolos-repo/main/repo",
+      "priority": 10,
+      "trusted": true,
+      "native": true,
+      "role": "native",
+      "domain": "itolos"
+    },
+    {
+      "name": "arch-core",
+      "type": "pacman",
+      "url": "https://geo.mirror.pkgbuild.com/core/os/x86_64",
+      "db": "core.db",
+      "priority": 20,
+      "trusted": true,
+      "native": false,
+      "role": "upstream",
+      "domain": "arch"
+    },
+    {
+      "name": "arch-extra",
+      "type": "pacman",
+      "url": "https://geo.mirror.pkgbuild.com/extra/os/x86_64",
+      "db": "extra.db",
+      "priority": 21,
+      "trusted": true,
+      "native": false,
+      "role": "upstream",
+      "domain": "arch"
+    }
+  ]
+}

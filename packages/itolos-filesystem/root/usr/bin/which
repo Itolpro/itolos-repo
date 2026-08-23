@@ -1,0 +1,25 @@
+#!/bin/sh
+# Small POSIX-compatible `which` kept in the ItolOS filesystem base.  The
+# command must be available in both the offline Live image and installed
+# systems without relying on an optional external package.
+case "${1:-}" in
+  '') exit 1 ;;
+esac
+case "$1" in
+  */*)
+    [ -x "$1" ] && printf '%s\n' "$1" && exit 0
+    exit 1
+    ;;
+esac
+old_ifs=$IFS
+IFS=:
+for dir in ${PATH:-/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin}; do
+  [ -n "$dir" ] || dir=.
+  if [ -x "$dir/$1" ] && [ ! -d "$dir/$1" ]; then
+    printf '%s\n' "$dir/$1"
+    IFS=$old_ifs
+    exit 0
+  fi
+done
+IFS=$old_ifs
+exit 1

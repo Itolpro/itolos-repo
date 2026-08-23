@@ -1,0 +1,10 @@
+{
+  "profiles": [
+    {
+      "file": "profiles/base.toml",
+      "name": "ItolOS Base",
+      "package": "itolos-base"
+    }
+  ],
+  "schema": 1
+}

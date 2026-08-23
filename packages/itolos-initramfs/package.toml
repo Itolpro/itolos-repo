@@ -1,0 +1,25 @@
+name = "itolos-initramfs"
+version = "0.1.1"
+architecture = "any"
+
+essential = true
+protected = true
+system_domain = "itolos"
+
+# The exact early-userspace contract is shipped in root/.  These dependencies
+# deliberately name every executable that SLM's native initramfs generator
+# copies and runtime-tests before publishing an image.
+depends = [
+    "bash",
+    "busybox",
+    "kmod",
+    "util-linux",
+    "zstd",
+    "xz",
+    "gzip",
+    "bzip2",
+    "tar",
+    "slm"
+]
+
+files = "root"

@@ -1,0 +1,48 @@
+name = "itolos-filesystem"
+version = "0.1.1"
+architecture = "any"
+
+essential = true
+protected = true
+system_domain = "itolos"
+
+directories = [
+    "/boot",
+    "/dev",
+    "/etc",
+    "/home",
+    "/media",
+    "/mnt",
+    "/opt",
+    "/proc",
+    "/root",
+    "/run",
+    "/srv",
+    "/sys",
+    "/tmp",
+
+    "/usr",
+    "/usr/bin",
+    "/usr/include",
+    "/usr/lib",
+    "/usr/libexec",
+    "/usr/local",
+    "/usr/local/bin",
+    "/usr/local/lib",
+    "/usr/local/sbin",
+    "/usr/sbin",
+    "/usr/share",
+
+    "/var",
+    "/var/cache",
+    "/var/lib",
+    "/var/local",
+    "/var/lock",
+    "/var/log",
+    "/var/opt",
+    "/var/run",
+    "/var/spool",
+    "/var/tmp"
+]
+
+files = "root"

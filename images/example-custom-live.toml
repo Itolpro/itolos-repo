@@ -1,0 +1,13 @@
+format = "slm-image-v1"
+kind = "live"
+label = "ITOLOS_CUSTOM"
+
+[system]
+# Add `sources = "path/to/sources.json"` above, or pass --sources. Point this
+# at a system tree produced by `slm system dump my-system`, or at
+# an ItolOS source repository. Its declared packages and managed files become
+# both the live environment and the exact installed system.
+source = "../my-system"
+profile = "itolos-base"
+locked = false
+packages = ["vim", "networkmanager"]

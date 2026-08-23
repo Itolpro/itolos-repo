@@ -1,0 +1,30 @@
+format = "itolos-initramfs-v1"
+
+# This is data, not an executable hook. SLM validates every listed target-root
+# path, its ELF closure, module indexes and the final CPIO before publication.
+[tools]
+bash = ["usr/bin/bash", "bin/bash"]
+busybox = ["usr/bin/busybox", "bin/busybox"]
+kmod = ["usr/bin/kmod", "bin/kmod"]
+blkid = ["usr/bin/blkid", "usr/sbin/blkid"]
+lsblk = ["usr/bin/lsblk"]
+zstd = ["usr/bin/zstd"]
+xz = ["usr/bin/xz"]
+gzip = ["usr/bin/gzip"]
+bzip2 = ["usr/bin/bzip2"]
+tar = ["usr/bin/tar", "bin/tar"]
+slm = ["usr/bin/slm", "usr/local/bin/slm"]
+
+[modules]
+early = [
+    "loop", "overlay", "squashfs", "isofs", "iso9660", "ext4",
+    "btrfs", "vfat", "fat", "nls_cp437", "nls_iso8859_1",
+    "nvme", "nvme_core", "ahci", "ata_generic", "libata", "sd_mod",
+    "sr_mod", "scsi_mod", "sg", "uas", "usb_storage",
+    "usbcore", "xhci_hcd", "xhci_pci", "ehci_hcd", "ehci_pci", "usbhid",
+    "virtio", "virtio_pci", "virtio_blk", "virtio_scsi", "virtio_net",
+    "e1000", "e1000e", "igb", "igc", "r8169", "tg3", "bnx2"
+]
+
+[live]
+label = "ITOLOS_LIVE"
