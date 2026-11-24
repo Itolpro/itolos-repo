@@ -1,5 +1,5 @@
 name = "itolos-base"
-version = "0.1.4"
+version = "0.1.6"
 architecture = "x86_64"
 type = "system-profile"
 
@@ -33,7 +33,10 @@ depends = [
 
     "iproute2",
     "iputils",
+    "networkmanager",
     "ca-certificates",
+    "openssh-client",
+    "openssh-server",
 
     "linux",
     "linux-firmware",

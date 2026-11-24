@@ -27,6 +27,8 @@
         "iproute2",
         "iputils",
         "ca-certificates",
+        "openssh-client",
+        "openssh-server",
         "linux",
         "linux-firmware",
         "slm",
@@ -37,7 +39,7 @@
         "system:slm"
       ],
       "description": "",
-      "filename": "itolos-base-0.1.4-x86_64.slpkg",
+      "filename": "itolos-base-0.1.5-x86_64.slpkg",
       "name": "itolos-base",
       "provides": [],
       "raw": {
@@ -52,10 +54,10 @@
         }
       },
       "repo_type": "slm",
-      "sha256": "08dee9b72293966f980f6ec5a54de253a5b53dedd114d3d26c69adfa7043f3ba",
+      "sha256": "e8a14389f65891070d19eda7e49451f6ef621420526d57a2d04a28474d0b31b4",
       "size": 10240,
-      "url": "itolos-base-0.1.4-x86_64.slpkg",
-      "version": "0.1.4"
+      "url": "itolos-base-0.1.5-x86_64.slpkg",
+      "version": "0.1.5"
     },
     {
       "arch": "any",
@@ -113,7 +115,7 @@
         }
       },
       "repo_type": "slm",
-      "sha256": "caf76b0e1c886ae4c832bb6d43223f3228d9d0a89faf687c2fe93ecb04fe7d58",
+      "sha256": "d559c0746398e9e17e8e2be6744cef9fc28aefcd331787c1cd5f76a409e84bdd",
       "size": 10240,
       "url": "itolos-filesystem-0.1.1-any.slpkg",
       "version": "0.1.1"
@@ -149,7 +151,7 @@
         }
       },
       "repo_type": "slm",
-      "sha256": "e440953d42b8c8e5487b3a75a2597126109776cf13eb1e404bdb91dba2b38792",
+      "sha256": "e5d804c5cf0d5b9c53f0f909940936ee61a22afed4e5c6c3142d551d134e88f0",
       "size": 10240,
       "url": "itolos-initramfs-0.1.1-any.slpkg",
       "version": "0.1.1"
@@ -174,7 +176,7 @@
         }
       },
       "repo_type": "slm",
-      "sha256": "b9a81651cb274af6830610c91a7a6d02f92d5354c64ffedcace65280953f0133",
+      "sha256": "de914bdb76ba227b776f36fd380e6a8c585f4f3baa90f3da7018c032d0256f17",
       "size": 10240,
       "url": "itolos-release-0.1.0-any.slpkg",
       "version": "0.1.0"
